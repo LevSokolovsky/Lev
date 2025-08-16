@@ -28,4 +28,3 @@ Feel free to submit issues or pull requests with improvements. Please ensure tha
 ## License
 
 This project does not include a specific license. All rights reserved by the repository owner.
-
