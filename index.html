@@ -1,20 +1,134 @@
-<!DOCTYPE html>
-
-
+<!doctype html>
 <html lang="he" dir="rtl">
-    <head>
-        <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-        <link href="Styles.css" rel="stylesheet">
-        <title>מזל טוב</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="section" style = "margin-top: 200;">
-                <h1>מזל טוב אלון</h1>
-                <h2>אולי הברקוד הזה לא אמיתי אבל המתנה כן</h2>
-                <h2>את הכסף הזה תוכל להוציא על מסעדה, הופעה או כל דבר אחר שתרצה</h2>
-            </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NeoGadgets</title>
+
+  <!-- פונט עברי נעים לקריאה -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">NeoGadgets</div>
+    <div class="logo">
+      <img src="assets/logo.png" alt="לוגו NeoGadgets" />
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>מוצרים מובילים</h1>
+  </section>
+  <main class="contact">
+    <section class="products" aria-labelledby="top-products">
+      <h2 id="top-products" class="visually-hidden">מוצרים מובילים</h2>
+    
+      <article class="product">
+        <img class="thumb" src="assets/prod1.png" alt="שם מוצר 1" />
+        <h3 class="product-name">BT Headphons Max 420</h3>
+        <p class="desc">סאונד מושלם. בכל מקום. כל הזמן (מוצר לדוגמא!).</p>
+        <a class="buy" href="#" target="_blank" rel="noopener">קישור לרכישה</a>
+      </article>
+    
+      <article class="product">
+        <img class="thumb" src="assets/prod2.png" alt="שם מוצר 2" />
+        <h3 class="product-name">Clean Robot 360 V420</h3>
+        <p class="desc">פשוט תלחץ, והוא כבר עושה את כל העבודה (מוצר לדוגמא!).</p>
+        <a class="buy" href="#" target="_blank" rel="noopener">קישור לרכישה</a>
+      </article>
+    </section>
+  </main>
+  <footer class="site-footer" dir="rtl">
+    <div class="footer-inner">
+      <nav class="social" aria-label="קישורים חברתיים">
+        <a href="https://www.instagram.com/neo._.gadgets/" target="_blank" rel="noopener" aria-label="Instagram" class="social-link">
+          <!-- Instagram (SVG) -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 3.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 2a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zM18 6.8a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+        </a>
+  
+        <a href="https://www.tiktok.com/@neo._.gadgets?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" aria-label="TikTok" class="social-link">
+          <!-- TikTok (SVG) -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2c.3 2.5 1.9 4.6 4.4 5.3A8.4 8.4 0 0 0 19 4.6V8a9.5 9.5 0 0 1-5-1.8v7.5a5.7 5.7 0 1 1-5.7-5.7c.5 0 1 .1 1.5.2V11a2.8 2.8 0 1 0 2.8 2.8V2h2.4z"/></svg>
+        </a>
+  
+        <a href="https://youtube.com/@neogadgetsil?si=wwG123sRrZ_s7Jrm" target="_blank" rel="noopener" aria-label="YouTube" class="social-link">
+          <!-- YouTube (SVG) -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 7.1a3 3 0 0 0-2.1-2.1C19.2 4.4 12 4.4 12 4.4s-7.2 0-9.4.6A3 3 0 0 0 .5 7.1 31 31 0 0 0 0 12a31 31 0 0 0 .5 4.9 3 3 0 0 0 2.1 2.1c2.2.6 9.4.6 9.4.6s7.2 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-4.9zM9.6 15.5V8.5L15.9 12l-6.3 3.5z"/></svg>
+        </a>
+      </nav>
+  
+      <div class="legal-links">
+        <a href="terms.html" target="_blank" rel="noopener">תנאי האתר</a>
+        <span aria-hidden="true">•</span>
+        <a href="privacy-policy.html" target="_blank" rel="noopener">מדיניות פרטיות</a>
+        <span aria-hidden="true">•</span>
+        <a href="accessibility.html">הצהרת נגישות</a>
+      </div>
+      <p class="contact-email">
+        ליצירת קשר: 
+        <a href="mailto:aisolutionsedge@gmail.com">aisolutionsedge@gmail.com</a>
+      </p>
+  
+      <p class="copy">© 2025 NeoGadgets – כל הזכויות שמורות.</p>
+  
+      <details class="disclaimer">
+        <summary>תקנון האתר</summary>
+        <div class="disclaimer-body">
+          <p>
+            NeoGadgets הינו אתר תוכן ושירותי הפניה/תיווך בלבד. המידע, ההמלצות, הקישורים וההפניות
+            למוצרים או שירותים של צדדים שלישיים (להלן: “המוצרים”) ניתנים “כפי שהם” (AS-IS) לצורכי מידע בלבד,
+            ואינם מהווים הצעה, התחייבות, ייעוץ מקצועי, מצג או אחריות מכל סוג.
+          </p>
+          <p>
+            מובהר כי NeoGadgets <strong>איננו היצרן/היבואן/הספק</strong> של המוצרים, איננו שולט באיכותם,
+            זמינותם, בטיחותם, מחירהם, תיאורם או במשלוחם, ואינו אחראי לכל נזק, הפסד, הוצאה או פגיעה—
+            ישירים או עקיפים—שייגרמו עקב שימוש במוצרים/מידע המופיע באתר או הסתמכות עליו.
+          </p>
+          <p>
+            כל עסקה שתתבצע באמצעות קישור מהאתר תעשה <strong>בין המשתמש לבין הספק הרלוונטי בלבד</strong>.
+            באחריות המשתמש לבדוק תנאי רכישה, אחריות, התאמה לצרכיו, עמידה בדרישות דין החלות עליו,
+            ונהלי משלוח/החזרה/ביטול מול הספק. אנו עשויים לקבל תגמול שותפים (affiliate) בעבור הפניות או רכישות.
+          </p>
+          <p>
+            מבלי לגרוע מן האמור, NeoGadgets שומר על הזכות לעדכן, לשנות, להשעות או להפסיק את שירותי האתר
+            או כל חלק מהם, מעת לעת וללא הודעה, וכן לעדכן את תנאי התקנון ומדיניות הפרטיות.
+            הנוסחים המחייבים הם אלו המפורסמים במסמכי ה-PDF המצוינים לעיל, כפי שיעודכנו מעת לעת.
+          </p>
+          <p>
+            בשימושך באתר אתה מאשר כי קראת והבנת את התנאים וכי אינך מסתמך על מצגים בעל-פה/בכתב שלא נכללו
+            במפורש במסמכי התקנון והפרטיות. אם אינך מסכים לתנאים—אנא הימנע משימוש באתר.
+          </p>
         </div>
-    </body>
+      </details>
+    </div>
+  </footer>
+  <!-- Cookie Banner -->
+<div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;background:#222;color:#fff;padding:15px;display:flex;justify-content:space-between;align-items:center;z-index:1000;font-family:Arial,sans-serif;font-size:14px;">
+  <span>
+    האתר עושה שימוש בעוגיות (Cookies) לצורך אנליטיקה ושיפור חוויית המשתמש. 
+    המשך שימוש באתר מהווה הסכמה לשימוש זה. 
+    <a href="/privacy-policy" style="color:#4da6ff;text-decoration:underline;">למדיניות הפרטיות</a>
+  </span>
+  <button onclick="acceptCookies()" style="background:#4da6ff;color:#fff;border:none;padding:8px 12px;border-radius:4px;cursor:pointer;">
+    הבנתי
+  </button>
+</div>
+
+<script>
+  function acceptCookies() {
+    document.getElementById('cookie-banner').style.display = 'none';
+    localStorage.setItem('cookiesAccepted', 'true');
+  }
+  if (localStorage.getItem('cookiesAccepted')) {
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+</script>
+
+</body>
 </html>
