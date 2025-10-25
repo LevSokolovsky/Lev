@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}Story Blog · Profile{% endblock %}
+{% block content %}
+<div class="profile">
+    <div class="profile__header">
+        <div class="profile__avatar">{{ profile.initials }}</div>
+        <div>
+            <h1 class="profile__name">{{ profile.name }}</h1>
+            <p class="profile__bio">{{ profile.bio }}</p>
+        </div>
+    </div>
+    <div class="profile__actions">
+        <a class="btn" href="{{ url_for('create_post') }}">New Post</a>
+        <button class="btn btn--ghost">Drafts</button>
+        <button class="btn btn--ghost">Edit profile</button>
+    </div>
+    <section class="profile__about">
+        <h2>About me</h2>
+        <p>{{ profile.about }}</p>
+    </section>
+    <section class="profile__stats">
+        <div class="stat-card">
+            <span class="stat-card__number">{{ profile.story_count }}</span>
+            <span class="stat-card__label">Stories published</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-card__number">{{ profile.followers }}</span>
+            <span class="stat-card__label">Followers</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-card__number">{{ profile.drafts }}</span>
+            <span class="stat-card__label">Drafts</span>
+        </div>
+    </section>
+</div>
+{% endblock %}
